@@ -1,0 +1,12 @@
+version: '3.5'
+
+services:
+  next:
+    container_name: next
+    build:
+      context: app
+    restart: always
+    ports:
+      - "${NEXT_PORT}:${NEXT_PORT}"
+    environment:
+      - NEXT_PORT=${NEXT_PORT}
