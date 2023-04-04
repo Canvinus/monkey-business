@@ -1,4 +1,4 @@
-import Button from './Common/Button'
+import SoundButton from './Common/SoundButton'
 
 export default function SoundControls({
   className,
@@ -9,8 +9,14 @@ export default function SoundControls({
     <div className={className}>
       <div className="bg-transparent w-10/12 pb-4" />
       <div className="flex align-center justify-center mr-4">
-        <Button logo="/logos/typewriter.svg" soundHandler={twSoundHandler} />
-        <Button logo="/logos/monkey.svg" soundHandler={monkeySoundHandler} />
+        <SoundButton
+          logo="/logos/typewriter.svg"
+          soundHandler={twSoundHandler}
+        />
+        <SoundButton
+          logo="/logos/monkey.svg"
+          soundHandler={monkeySoundHandler}
+        />
       </div>
     </div>
   )

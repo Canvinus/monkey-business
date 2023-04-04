@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 
-export default function Button({ logo, soundHandler }) {
+export default function SoundButton({ logo, soundHandler }) {
   const [clicked, setClicked] = useState(false)
 
   return (

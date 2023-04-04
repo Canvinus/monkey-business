@@ -58,7 +58,6 @@ export default function Home() {
   }, [monkeysAudio, isLoaded, monkeysVolume])
 
   const monkeySoundHandler = (status) => {
-    console.log(status)
     status ? setMonkeysVolume(0.3) : setMonkeysVolume(0)
   }
 
@@ -79,7 +78,7 @@ export default function Home() {
       </Head>
       <main>
         <SoundControls
-          className="absolute top-0 right-0"
+          className="absolute top-5 right-10"
           twSoundHandler={twSoundHandler}
           monkeySoundHandler={monkeySoundHandler}
         />
