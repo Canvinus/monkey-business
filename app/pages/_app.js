@@ -1,14 +1,13 @@
 import '@/styles/globals.css'
-import BackGround from '@/components/Background'
-import Header from '@/components/Header'
+
+import Layout from '@/components/Layouts/Layout'
 
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <BackGround>
-        <Header />
+      <Layout>
         <Component {...pageProps} />
-      </BackGround>
+      </Layout>
     </>
   )
 }
