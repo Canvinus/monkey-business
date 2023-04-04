@@ -4,13 +4,13 @@ import Head from 'next/head'
 import { useEffect, useState } from 'react'
 
 const tw_sounds = [
-  'sounds/typewriter/tw1.mp3',
-  'sounds/typewriter/tw2.mp3',
-  'sounds/typewriter/tw3.mp3',
-  'sounds/typewriter/tw4.mp3',
-  'sounds/typewriter/tw5.mp3',
-  'sounds/typewriter/tw6.mp3',
-  'sounds/typewriter/tw7.mp3',
+  'https://ipfs.io/ipfs/bafybeic7pb4emuuqj277bopkewxvgyfizgd43z6gipk32eeiq64fb7nb2a/tw1.mp3',
+  'https://ipfs.io/ipfs/bafybeih54ojeermjcwvfmvfzwzyvn4xlcxxqbk37awubqlw2t2fqc2whxa/tw2.mp3',
+  'https://ipfs.io/ipfs/bafybeiejv5beqdbxg43kgodcwykbk3bfuxeavqrkc7oesun2odg6buxx7a/tw3.mp3',
+  'https://ipfs.io/ipfs/bafybeiefiz4tg5yodeourggt5nth5huqa3dkdtijyosdksd2nqcriqylbq/tw4.mp3',
+  'https://ipfs.io/ipfs/bafybeifgio4lgu763oeaesxyfp3g77bhulecr7pt56suiz33mjlgnnzmwm/tw5.mp3',
+  'https://ipfs.io/ipfs/bafybeibytpbm3kabn333wrcc7qel7fk4t7o5cmttxdde6uzc5a2ftrlsfm/tw6.mp3',
+  'https://ipfs.io/ipfs/bafybeifqvow6ezs5valn4x2qwwzzd5fmhslvugizhvz5dcdb4eogyap2tm/tw7.mp3',
 ]
 
 const initText = `The infinite monkey theorem states that a monkey hitting keys at random on a typewriter keyboard for an infinite amount of time will almost surely type a given text, such as the complete works of William Shakespeare. In fact, the monkey would almost surely type every possible finite text an infinite number of times.`
@@ -25,7 +25,11 @@ export default function Home() {
   const [twVolume, setTwVolume] = useState(1)
 
   useEffect(() => {
-    setMonkeysAudio(new Audio('/sounds/monkeys/monkeys.mp3'))
+    setMonkeysAudio(
+      new Audio(
+        'https://ipfs.io/ipfs/bafybeig2cslxvjlfccxmkmqu6itqdzzriazioq54lttskgfj5o3fcyboqm/monkeys.mp3'
+      )
+    )
   }, [])
 
   useEffect(() => {
@@ -74,7 +78,10 @@ export default function Home() {
           name="viewport"
           content="width=device-width, height=device-height, initial-scale=1"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link
+          rel="icon"
+          href="https://ipfs.io/ipfs/bafybeib3qwmkubqsqlwsehvrejahqhklek7ylpzgjmavyeru4d7bo7hfyi/favicon.ico"
+        />
       </Head>
       <main>
         <SoundControls

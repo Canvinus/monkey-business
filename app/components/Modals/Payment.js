@@ -78,7 +78,7 @@ export default function Payment({ handleClose }) {
                     />
                     <Image
                       className="ml-2 mr-16"
-                      src="/logos/ape.png"
+                      src="https://ipfs.io/ipfs/bafybeiayhmuolt2muzilwri7cy7s57emscv2x45aggc7gg3mrl22w4xjka/ape.png"
                       width={36}
                       height={36}
                       alt="ape-logo"

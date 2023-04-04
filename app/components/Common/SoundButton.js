@@ -16,7 +16,7 @@ export default function SoundButton({ logo, soundHandler }) {
         {clicked && (
           <Image
             className="absolute z-20 invert"
-            src="/logos/forbidden.svg"
+            src="https://ipfs.io/ipfs/bafybeiheymfswj4u4fmjtridptbrdd4mjjidwrgrxqzsvjuvf5nmanekau/forbidden.svg"
             width="55"
             height="55"
             alt="img-forbidden"

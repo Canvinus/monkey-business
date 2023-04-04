@@ -12,7 +12,7 @@ export default function Header() {
     <div className="flex justify-center items-center w-screen">
       <Image
         className="h-auto max-w-full rounded-lg shadow-md m-2"
-        src="/logo.png"
+        src="https://ipfs.io/ipfs/bafybeiaklx3glxq54n5iks7egrxzi37xbqqfvtwusqp6wr6fz6uaikx5yy/logo.png"
         width="100"
         height="100"
         alt="logo"
