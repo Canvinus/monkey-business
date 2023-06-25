@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "node prod-server.js",
+    "start": "next start --port ${NEXT_PORT}",
     "lint": "next lint"
   },
   "dependencies": {

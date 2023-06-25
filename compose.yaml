@@ -5,8 +5,14 @@ services:
     container_name: next
     build:
       context: app
+    networks:
+      - nwk
     restart: always
     ports:
       - "${NEXT_PORT}:${NEXT_PORT}"
     environment:
       - NEXT_PORT=${NEXT_PORT}
+
+networks:
+  nwk:
+    driver: bridge
